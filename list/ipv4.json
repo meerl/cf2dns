@@ -1,33 +1,23 @@
 [
     {
         "colo": "Default",
-        "ip": "172.64.173.81",
-        "latency": 207,
-        "line": "CM",
-        "loss": 0,
-        "node": "51C_SDCM",
-        "speed": 720,
-        "time": "2024-10-21 12:35:12"
-    },
-    {
-        "colo": "Default",
-        "ip": "172.67.241.220",
+        "ip": "172.64.194.30",
         "latency": 205,
         "line": "CM",
         "loss": 0,
         "node": "51C_SDCM",
-        "speed": 645,
-        "time": "2024-10-21 12:27:52"
+        "speed": 1175,
+        "time": "2024-10-21 12:48:24"
     },
     {
         "colo": "Default",
-        "ip": "172.67.55.217",
-        "latency": 214,
+        "ip": "172.67.218.183",
+        "latency": 206,
         "line": "CM",
         "loss": 0,
         "node": "51C_SDCM",
-        "speed": 560,
-        "time": "2024-10-21 12:35:12"
+        "speed": 745,
+        "time": "2024-10-21 12:48:24"
     },
     {
         "colo": "Default",
@@ -40,6 +30,16 @@
         "time": "2024-10-21 12:35:13"
     },
     {
+        "colo": "SEA",
+        "ip": "172.67.157.192",
+        "latency": 156,
+        "line": "CM",
+        "loss": 0,
+        "node": "CDCM",
+        "speed": 310,
+        "time": "2024-10-21 12:50:48"
+    },
+    {
         "colo": "Default",
         "ip": "172.67.228.210",
         "latency": 207,
@@ -50,54 +50,54 @@
         "time": "2024-10-21 12:41:50"
     },
     {
-        "colo": "LHR",
-        "ip": "104.21.11.80",
-        "latency": 171,
+        "colo": "SJC",
+        "ip": "172.64.136.232",
+        "latency": 158,
         "line": "CT",
         "loss": 0,
-        "node": "QIXJSCT",
-        "speed": 310,
-        "time": "2024-10-21 12:43:28"
+        "node": "SDO_HBCT",
+        "speed": 1400,
+        "time": "2024-10-21 12:49:31"
     },
     {
         "colo": "HKG",
-        "ip": "104.22.22.66",
-        "latency": 169,
+        "ip": "172.67.41.134",
+        "latency": 184,
+        "line": "CT",
+        "loss": 0,
+        "node": "SDO_HBCT",
+        "speed": 1070,
+        "time": "2024-10-21 12:49:32"
+    },
+    {
+        "colo": "IAD",
+        "ip": "172.67.104.44",
+        "latency": 209,
+        "line": "CT",
+        "loss": 0,
+        "node": "SDO_HBCT",
+        "speed": 805,
+        "time": "2024-10-21 12:49:32"
+    },
+    {
+        "colo": "LAX",
+        "ip": "104.18.121.50",
+        "latency": 179,
         "line": "CT",
         "loss": 0,
         "node": "QIXJSCT",
         "speed": 290,
-        "time": "2024-10-21 12:43:21"
-    },
-    {
-        "colo": "HKG",
-        "ip": "104.17.137.76",
-        "latency": 185,
-        "line": "CT",
-        "loss": 0,
-        "node": "QIXJSCT",
-        "speed": 265,
-        "time": "2024-10-21 12:43:41"
+        "time": "2024-10-21 12:53:24"
     },
     {
         "colo": "LHR",
-        "ip": "104.21.219.174",
-        "latency": 174,
+        "ip": "104.21.93.221",
+        "latency": 195,
         "line": "CT",
         "loss": 0,
         "node": "QIXJSCT",
-        "speed": 260,
-        "time": "2024-10-21 12:43:34"
-    },
-    {
-        "colo": "SJC",
-        "ip": "172.64.201.110",
-        "latency": 190,
-        "line": "CT",
-        "loss": 0,
-        "node": "QYZJBGP",
-        "speed": 215,
-        "time": "2024-10-21 12:35:23"
+        "speed": 280,
+        "time": "2024-10-21 12:53:35"
     },
     {
         "colo": "HKG",
@@ -121,16 +121,6 @@
     },
     {
         "colo": "HKG",
-        "ip": "104.26.11.243",
-        "latency": 103,
-        "line": "CU",
-        "loss": 0,
-        "node": "EJIA_CU",
-        "speed": 260,
-        "time": "2024-10-21 11:45:18"
-    },
-    {
-        "colo": "HKG",
         "ip": "172.67.64.19",
         "latency": 115,
         "line": "CU",
@@ -148,5 +138,15 @@
         "node": "EJIA_CU",
         "speed": 260,
         "time": "2024-10-21 10:05:18"
+    },
+    {
+        "colo": "HKG",
+        "ip": "104.26.11.243",
+        "latency": 103,
+        "line": "CU",
+        "loss": 0,
+        "node": "EJIA_CU",
+        "speed": 260,
+        "time": "2024-10-21 11:45:18"
     }
 ]
