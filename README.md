@@ -10,4 +10,4 @@
 * لیست هر ۱۵ دقیقه خودکار بروزرسانی میشود
 ---
 
-[https://ircf.space/list.php](https://ircf.space/list.html)
+[https://ircf.space/list.html](https://ircf.space/list.html)
