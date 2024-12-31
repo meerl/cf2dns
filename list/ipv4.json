@@ -11,16 +11,6 @@
     },
     {
         "colo": "Default",
-        "ip": "162.159.247.5",
-        "latency": 207,
-        "line": "CM",
-        "loss": 0,
-        "node": "51C_SDCM",
-        "speed": 750,
-        "time": "2024-12-30 18:06:17"
-    },
-    {
-        "colo": "Default",
         "ip": "172.67.181.87",
         "latency": 202,
         "line": "CM",
@@ -28,6 +18,16 @@
         "node": "51C_SDCM",
         "speed": 750,
         "time": "2024-12-30 18:29:45"
+    },
+    {
+        "colo": "Default",
+        "ip": "172.67.164.120",
+        "latency": 194,
+        "line": "CM",
+        "loss": 0,
+        "node": "51C_SDCM",
+        "speed": 290,
+        "time": "2024-12-30 18:50:10"
     },
     {
         "colo": "Default",
@@ -50,84 +50,74 @@
         "time": "2024-12-30 18:29:48"
     },
     {
-        "colo": "SJC",
-        "ip": "172.64.84.176",
-        "latency": 159,
+        "colo": "HKG",
+        "ip": "172.67.38.95",
+        "latency": 184,
+        "line": "CT",
+        "loss": 0,
+        "node": "SDO_ZJCT",
+        "speed": 1515,
+        "time": "2024-12-30 18:49:04"
+    },
+    {
+        "colo": "HKG",
+        "ip": "172.67.20.170",
+        "latency": 180,
         "line": "CT",
         "loss": 0,
         "node": "SDO_HBCT",
-        "speed": 970,
-        "time": "2024-12-30 18:30:05"
-    },
-    {
-        "colo": "SJC",
-        "ip": "172.64.171.143",
-        "latency": 132,
-        "line": "CT",
-        "loss": 0,
-        "node": "SDO_ZJCT",
-        "speed": 935,
-        "time": "2024-12-30 18:29:13"
-    },
-    {
-        "colo": "SJC",
-        "ip": "172.64.139.235",
-        "latency": 131,
-        "line": "CT",
-        "loss": 0,
-        "node": "SDO_ZJCT",
-        "speed": 700,
-        "time": "2024-12-30 18:39:08"
+        "speed": 1060,
+        "time": "2024-12-30 18:50:04"
     },
     {
         "colo": "LHR",
-        "ip": "172.67.239.158",
-        "latency": 192,
+        "ip": "172.67.254.6",
+        "latency": 234,
         "line": "CT",
         "loss": 0,
-        "node": "SDO_ZJCT",
-        "speed": 645,
-        "time": "2024-12-30 18:25:51"
+        "node": "SDO_HBCT",
+        "speed": 830,
+        "time": "2024-12-30 18:50:04"
+    },
+    {
+        "colo": "SJC",
+        "ip": "172.64.107.89",
+        "latency": 160,
+        "line": "CT",
+        "loss": 0,
+        "node": "SDO_HBCT",
+        "speed": 745,
+        "time": "2024-12-30 18:50:05"
     },
     {
         "colo": "LHR",
-        "ip": "172.67.255.178",
-        "latency": 210,
+        "ip": "172.67.231.139",
+        "latency": 207,
         "line": "CT",
         "loss": 0,
         "node": "SDO_HBCT",
         "speed": 625,
-        "time": "2024-12-30 18:30:06"
+        "time": "2024-12-30 18:50:05"
     },
     {
         "colo": "NRT",
-        "ip": "198.41.212.76",
-        "latency": 55,
-        "line": "CU",
-        "loss": 0,
-        "node": "KXY_BJCU",
-        "speed": 1535,
-        "time": "2024-12-30 18:30:15"
-    },
-    {
-        "colo": "NRT",
-        "ip": "172.67.59.208",
+        "ip": "162.159.244.93",
         "latency": 57,
         "line": "CU",
         "loss": 0,
         "node": "KXY_BJCU",
         "speed": 1520,
-        "time": "2024-12-30 18:20:14"
+        "time": "2024-12-30 18:50:14"
     },
     {
         "colo": "NRT",
-        "ip": "172.64.83.32",
-        "latency": 57,
+        "ip": "172.67.44.36",
+        "latency": 55,
         "line": "CU",
         "loss": 0,
         "node": "KXY_BJCU",
-        "speed": 1490,
-        "time": "2024-12-30 18:20:14"
+        "speed": 700,
+        "time": "2024-12-30 18:40:15"
     },
     {
         "colo": "HKG",
@@ -138,6 +128,16 @@
         "node": "EJIA_CU",
         "speed": 310,
         "time": "2024-12-30 18:35:18"
+    },
+    {
+        "colo": "HKG",
+        "ip": "162.159.152.229",
+        "latency": 136,
+        "line": "CU",
+        "loss": 0,
+        "node": "EJIA_CU",
+        "speed": 310,
+        "time": "2024-12-30 18:45:18"
     },
     {
         "colo": "HKG",
