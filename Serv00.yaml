@@ -1,0 +1,141 @@
+port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+dns:
+  enable: false
+  listen: :53
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver: 
+    - 223.5.5.5
+    - 8.8.8.8
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  fallback:
+    - https://1.0.0.1/dns-query
+    - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+
+proxies:
+- name: vless-reality-vision-s4-realuk2024               
+  type: vless
+  server: 128.204.223.95                           
+  port: 21011                                
+  uuid: 80ab8b31-fb6d-4d52-b02d-a4fbbd86e9ef   
+  network: tcp
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: realuk2024.serv00.net                 
+  reality-opts: 
+    public-key: PCXzy0nSWtnLic6e_RaigiSMggUtnZdtoUVtSp2IHwk                      
+  client-fingerprint: chrome                  
+
+- name: vmess-ws-s4-realuk2024                         
+  type: vmess
+  server: 128.204.223.95                       
+  port: 53330                                     
+  uuid: 80ab8b31-fb6d-4d52-b02d-a4fbbd86e9ef       
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: www.bing.com                    
+  ws-opts:
+    path: "/80ab8b31-fb6d-4d52-b02d-a4fbbd86e9ef-vm"                             
+    headers:
+      Host: www.bing.com                     
+
+- name: hysteria2-s4-realuk2024                            
+  type: hysteria2                                      
+  server: 128.204.223.95                               
+  port: 55458                                
+  password: 80ab8b31-fb6d-4d52-b02d-a4fbbd86e9ef                          
+  alpn:
+    - h3
+  sni: www.bing.com                               
+  skip-cert-verify: true
+  fast-open: true
+
+- name: vmess-tls-argo-s4-realuk2024                         
+  type: vmess
+  server: fbi.gov                        
+  port: 8443                                     
+  uuid: 80ab8b31-fb6d-4d52-b02d-a4fbbd86e9ef       
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  servername: album-ser-tr-vegetable.trycloudflare.com                    
+  ws-opts:
+    path: "/80ab8b31-fb6d-4d52-b02d-a4fbbd86e9ef-vm"                             
+    headers:
+      Host: album-ser-tr-vegetable.trycloudflare.com
+
+- name: vmess-argo-s4-realuk2024                         
+  type: vmess
+  server: fbi.gov                        
+  port: 8880                                     
+  uuid: 80ab8b31-fb6d-4d52-b02d-a4fbbd86e9ef       
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: album-ser-tr-vegetable.trycloudflare.com                   
+  ws-opts:
+    path: "/80ab8b31-fb6d-4d52-b02d-a4fbbd86e9ef-vm"                             
+    headers:
+      Host: album-ser-tr-vegetable.trycloudflare.com 
+
+proxy-groups:
+- name: Balance
+  type: load-balance
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  strategy: round-robin
+  proxies:
+    - vless-reality-vision-s4-realuk2024                              
+    - vmess-ws-s4-realuk2024
+    - hysteria2-s4-realuk2024
+    - vmess-tls-argo-s4-realuk2024
+    - vmess-argo-s4-realuk2024
+
+- name: Auto
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+    - vless-reality-vision-s4-realuk2024                             
+    - vmess-ws-s4-realuk2024
+    - hysteria2-s4-realuk2024
+    - vmess-tls-argo-s4-realuk2024
+    - vmess-argo-s4-realuk2024
+    
+- name: Select
+  type: select
+  proxies:
+    - Balance                                         
+    - Auto
+    - DIRECT
+    - vless-reality-vision-s4-realuk2024                              
+    - vmess-ws-s4-realuk2024
+    - hysteria2-s4-realuk2024
+    - vmess-tls-argo-s4-realuk2024
+    - vmess-argo-s4-realuk2024
+rules:
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,Select
