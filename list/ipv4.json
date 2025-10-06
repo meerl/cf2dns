@@ -60,6 +60,16 @@
         "time": "2025-10-05 21:25:06"
     },
     {
+        "colo": "SIN",
+        "ip": "198.41.223.122",
+        "latency": 94,
+        "line": "CT",
+        "loss": 0,
+        "node": "QYZJBGP",
+        "speed": 295,
+        "time": "2025-10-05 21:45:07"
+    },
+    {
         "colo": "LAX",
         "ip": "104.21.225.46",
         "latency": 160,
@@ -68,16 +78,6 @@
         "node": "QYZJBGP",
         "speed": 280,
         "time": "2025-10-05 21:15:49"
-    },
-    {
-        "colo": "LAX",
-        "ip": "162.159.255.79",
-        "latency": 157,
-        "line": "CT",
-        "loss": 0,
-        "node": "QYZJBGP",
-        "speed": 245,
-        "time": "2025-10-05 21:15:29"
     },
     {
         "colo": "FRA",
@@ -101,6 +101,26 @@
     },
     {
         "colo": "NRT",
+        "ip": "198.41.222.32",
+        "latency": 56,
+        "line": "CU",
+        "loss": 0,
+        "node": "KXY_BJCU",
+        "speed": 1525,
+        "time": "2025-10-05 21:53:02"
+    },
+    {
+        "colo": "NRT",
+        "ip": "172.67.99.33",
+        "latency": 55,
+        "line": "CU",
+        "loss": 0,
+        "node": "KXY_BJCU",
+        "speed": 1525,
+        "time": "2025-10-05 21:53:01"
+    },
+    {
+        "colo": "NRT",
         "ip": "172.67.83.113",
         "latency": 55,
         "line": "CU",
@@ -121,32 +141,12 @@
     },
     {
         "colo": "LHR",
-        "ip": "172.67.203.39",
-        "latency": 224,
-        "line": "CU",
-        "loss": 0,
-        "node": "KXY_BJCU",
-        "speed": 500,
-        "time": "2025-10-05 21:33:04"
-    },
-    {
-        "colo": "LHR",
         "ip": "172.67.253.178",
         "latency": 218,
         "line": "CU",
         "loss": 0,
         "node": "KXY_BJCU",
         "speed": 330,
-        "time": "2025-10-05 21:33:06"
-    },
-    {
-        "colo": "LHR",
-        "ip": "172.67.145.55",
-        "latency": 225,
-        "line": "CU",
-        "loss": 0,
-        "node": "KXY_BJCU",
-        "speed": 270,
         "time": "2025-10-05 21:33:06"
     }
 ]
