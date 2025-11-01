@@ -1,5 +1,25 @@
 [
     {
+        "colo": "LAX",
+        "ip": "172.64.66.114",
+        "latency": 56,
+        "line": "CM",
+        "loss": 0,
+        "node": "CDCM",
+        "speed": 255,
+        "time": "2025-11-01 00:29:35"
+    },
+    {
+        "colo": "HKG",
+        "ip": "198.41.208.250",
+        "latency": 55,
+        "line": "CM",
+        "loss": 0,
+        "node": "CDCM",
+        "speed": 255,
+        "time": "2025-11-01 00:08:05"
+    },
+    {
         "colo": "HKG",
         "ip": "198.41.209.10",
         "latency": 53,
@@ -28,26 +48,6 @@
         "node": "SQCM",
         "speed": 255,
         "time": "2025-11-01 01:46:47"
-    },
-    {
-        "colo": "LAX",
-        "ip": "172.64.66.114",
-        "latency": 56,
-        "line": "CM",
-        "loss": 0,
-        "node": "CDCM",
-        "speed": 255,
-        "time": "2025-11-01 00:29:35"
-    },
-    {
-        "colo": "HKG",
-        "ip": "198.41.208.250",
-        "latency": 55,
-        "line": "CM",
-        "loss": 0,
-        "node": "CDCM",
-        "speed": 255,
-        "time": "2025-11-01 00:08:05"
     },
     {
         "colo": "SIN",
@@ -101,16 +101,6 @@
     },
     {
         "colo": "LHR",
-        "ip": "172.67.251.17",
-        "latency": 142,
-        "line": "CU",
-        "loss": 0,
-        "node": "KXY_BJCU",
-        "speed": 1555,
-        "time": "2025-11-01 03:23:35"
-    },
-    {
-        "colo": "LHR",
         "ip": "172.67.175.19",
         "latency": 143,
         "line": "CU",
@@ -121,13 +111,23 @@
     },
     {
         "colo": "LHR",
-        "ip": "172.67.187.72",
-        "latency": 143,
+        "ip": "172.67.202.164",
+        "latency": 144,
+        "line": "CU",
+        "loss": 0,
+        "node": "KXY_BJCU",
+        "speed": 1525,
+        "time": "2025-11-01 03:43:35"
+    },
+    {
+        "colo": "NRT",
+        "ip": "190.93.246.111",
+        "latency": 56,
         "line": "CU",
         "loss": 0,
         "node": "KXY_BJCU",
         "speed": 1520,
-        "time": "2025-11-01 03:23:36"
+        "time": "2025-11-01 03:43:35"
     },
     {
         "colo": "Default",
